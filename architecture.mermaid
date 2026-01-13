@@ -1,0 +1,13 @@
+graph TD
+    User[Security Analyst] -->|Uploads Logs| Frontend[React + Three.js Frontend]
+    Frontend -->|POST /api/ingest| API[FastAPI Backend]
+    API -->|Parse & Analyze| Engine[Detection Engine]
+    Engine -->|Build Graph| Graph[NetworkX Graph]
+    Graph -->|Return JSON| API
+    API -->|Graph Data| Frontend
+    Frontend -->|Render| 3D[3D Interactive Visualization]
+    
+    subgraph Google Cloud Platform
+        Frontend -->|Deployed on| CR1[Cloud Run Service (Web)]
+        API -->|Deployed on| CR2[Cloud Run Service (API)]
+    end

@@ -1,0 +1,6 @@
+2026-01-13T10:00:01 192.168.1.50 sshd: Failed password for root from 203.0.113.45 port 4231 ssh2
+2026-01-13T10:00:02 192.168.1.50 sshd: Failed password for root from 203.0.113.45 port 4233 ssh2
+2026-01-13T10:00:03 192.168.1.50 sshd: Failed password for root from 203.0.113.45 port 4235 ssh2
+2026-01-13T10:00:04 192.168.1.50 sshd: Failed password for root from 203.0.113.45 port 4237 ssh2
+2026-01-13T10:05:00 203.0.113.45 - - "GET /admin.php?id=1' OR '1'='1 HTTP/1.1" 200 1234
+2026-01-13T10:06:00 203.0.113.45 - - "POST /login HTTP/1.1" 200 456

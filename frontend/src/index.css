@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cyber-bg text-cyber-text overflow-hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.cyber-panel {
+  @apply bg-cyber-panel border border-cyber-dim/30 rounded-lg backdrop-blur-sm shadow-xl;
+}
+
+.cyber-button {
+  @apply px-4 py-2 rounded bg-cyber-primary/10 border border-cyber-primary/50 text-cyber-primary hover:bg-cyber-primary/20 transition-all uppercase tracking-wider text-xs font-bold;
+}
+
+.cyber-glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px,0) skew(0deg); }
+  4%, 60% { transform: translate(-2px,0) skew(0deg); }
+  62% { transform: translate(0,0) skew(5deg); }
+}
