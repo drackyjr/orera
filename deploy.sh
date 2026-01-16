@@ -1,5 +1,5 @@
 #!/bin/bash
-# Deployment Script for Cyber Attack Visualization Platform
+# Deployment Script for Cyber Attack Visualization Platforms
 
 # Variables
 PROJECT_ID=$(gcloud config get-value project)
